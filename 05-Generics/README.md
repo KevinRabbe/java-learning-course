@@ -1,69 +1,73 @@
-# Modul 5: Generics - Generische Programmierung
+# Modul 5: File I/O - Dateiverwaltung
 
-Willkommen zu Modul 5! Hier lernst du die Grundlagen der generischen Programmierung in Java, die es ermöglicht, wiederverwendbaren und typsicheren Code zu schreiben.
+Willkommen zu Modul 5! Hier lernst du die Grundlagen der Dateiverwaltung in Java kennen - wie du Dateien lesen, schreiben und bearbeiten kannst.
 
 ## 📚 Themen in diesem Modul
 
-### 1. Einführung in Generics
-- Was sind Generics?
-- Warum Generics verwenden?
-- Type Safety und Compile-Time Checks
+### 1. Grundlagen der Dateiverwaltung
+- Dateien und Verzeichnisse verstehen
+- File-Klasse verwenden
+- Pfade und absolute/relative Pfade
 
-### 2. Generische Klassen
-- Generische Klassen definieren
-- Mehrere Typparameter
-- Konstruktoren mit Generics
+### 2. Dateien lesen
+- Textdateien mit FileReader und BufferedReader lesen
+- Binäre Dateien mit FileInputStream lesen
+- try-with-resources für sichere Ressourcenverwaltung
 
-### 3. Generische Methoden
-- Statische generische Methoden
-- Instanzmethoden mit Generics
-- Type Inference
+### 3. Dateien schreiben
+- Textdateien mit FileWriter und PrintWriter schreiben
+- Binäre Dateien mit FileOutputStream schreiben
+- Anhängen vs. Überschreiben
 
-### 4. Bounded Type Parameters
-- Upper Bounds (extends)
-- Lower Bounds (super)
-- Multiple Bounds
+### 4. Fortgeschrittene Dateioperationen
+- Dateien kopieren
+- Dateien verschieben/umbenennen
+- Dateien löschen
+- Verzeichnisse erstellen und durchlaufen
 
-### 5. Wildcards
-- Unbounded Wildcards (?)
-- Upper Bounded Wildcards (? extends T)
-- Lower Bounded Wildcards (? super T)
+### 5. Exception Handling bei I/O
+- IOException behandeln
+- FileNotFoundException
+- Ressourcen ordnungsgemäß schließen
 
-### 6. Generics und Collections
-- Generische Collections verwenden
-- Raw Types vs. Parameterized Types
-- Legacy Code und Generics
+### 6. NIO.2 (New I/O)
+- Path und Paths verwenden
+- Files-Klasse für moderne Operationen
+- DirectoryStream für Verzeichnisdurchlauf
 
 ## 🎯 Lernziele
 
 Nach diesem Modul kannst du:
-- ✅ Verstehen, warum Generics wichtig sind
-- ✅ Generische Klassen und Methoden erstellen
-- ✅ Bounded Types und Wildcards verwenden
-- ✅ Typsicheren Code schreiben
-- ✅ Generics in Collections anwenden
+- ✅ Dateien sicher lesen und schreiben
+- ✅ Mit verschiedenen Dateitypen arbeiten
+- ✅ Exception Handling bei I/O-Operationen anwenden
+- ✅ Verzeichnisse verwalten
+- ✅ Moderne NIO.2 APIs verwenden
+- ✅ Ressourcen ordnungsgemäß freigeben
 
 ## 📝 Dateien in diesem Modul
 
-1. **GenericsIntro.java** - Einführung und grundlegende Beispiele
-2. **GenericClasses.java** - Arbeiten mit generischen Klassen
-3. **GenericMethods.java** - Generische Methoden und Type Inference
-4. **BoundedTypes.java** - Bounded Type Parameters
-5. **WildcardsDemo.java** - Wildcards in Aktion
-6. **GenericsQuiz.java** - Übungen und Quiz-Fragen
+1. **FileBasics.java** - Grundlagen mit File-Klasse
+2. **ReadingFiles.java** - Verschiedene Methoden zum Lesen von Dateien
+3. **WritingFiles.java** - Schreiben von Text- und Binärdateien
+4. **AdvancedOperations.java** - Kopieren, Verschieben, Löschen
+5. **NIOExample.java** - Moderne NIO.2 APIs
+6. **FileIOQuiz.java** - Übungen und Quiz-Fragen
 
 ## 🚀 Los geht's!
 
-Beginne mit GenericsIntro.java, um die Grundlagen zu verstehen. Generics sind ein mächtiges Feature, das dir hilft, besseren Code zu schreiben!
+Beginne mit FileBasics.java, um die Grundlagen zu lernen. Erstelle Testdateien in einem separaten Ordner, um sicher zu experimentieren!
 
 ## 💡 Tipps
 
-- Generics eliminieren ClassCastException zur Laufzeit.
-- Verwende immer Parameterized Types statt Raw Types.
-- Wildcards machen deinen Code flexibler, aber auch komplexer.
-- Experimentiere mit verschiedenen Typen!
+- Verwende immer try-with-resources für Streams.
+- Schließe niemals Ressourcen manuell, wenn möglich.
+- Überprüfe immer, ob Dateien existieren, bevor du sie liest.
+- Verwende absolute Pfade für Produktionscode.
+- Teste mit kleinen Dateien zuerst.
 
 ## 📚 Ressourcen
 
-- [Oracle Java Tutorials: Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
-- [Java Generics FAQ](https://www.angelikalanger.com/GenericsFAQ/JavaGenericsFAQ.html)
+- [Oracle Java Tutorials: File I/O](https://docs.oracle.com/javase/tutorial/essential/io/index.html)
+- [Java API Dokumentation: java.io](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html)
+- [Java API Dokumentation: java.nio](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/package-summary.html)
