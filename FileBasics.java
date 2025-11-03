@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class FileBasics {
     public static void main(String[] args) {
-        System.out.println("=== Grundlagen der Dateiverwaltung ===\n");
+        System.out.println("=== Grundlagen der Dateiverwaltung ===\\n");
 
         // 1. Erstellen von File-Objekten
         System.out.println("--- Erstellen von File-Objekten ---");
@@ -26,7 +26,7 @@ public class FileBasics {
         System.out.println("Datei in Verzeichnis: " + fileInDir.getPath());
 
         // 2. Überprüfen von Dateien und Verzeichnissen
-        System.out.println("\n--- Überprüfen von Dateien und Verzeichnissen ---");
+        System.out.println("\\n--- Überprüfen von Dateien und Verzeichnissen ---");
         
         File testFile = new File("example.txt");
         System.out.println("Dateiname: " + testFile.getName());
@@ -41,7 +41,7 @@ public class FileBasics {
         }
 
         // 3. Arbeiten mit Verzeichnissen
-        System.out.println("\n--- Arbeiten mit Verzeichnissen ---");
+        System.out.println("\\n--- Arbeiten mit Verzeichnissen ---");
         
         File directory = new File("test_directory");
         System.out.println("Verzeichnis existiert: " + directory.exists());
@@ -60,7 +60,7 @@ public class FileBasics {
         }
 
         // 4. Dateien auflisten
-        System.out.println("\n--- Dateien auflisten ---");
+        System.out.println("\\n--- Dateien auflisten ---");
         
         File currentDir = new File(".");
         String[] files = currentDir.list();
@@ -82,7 +82,7 @@ public class FileBasics {
         }
 
         // 5. Pfad-Operationen
-        System.out.println("\n--- Pfad-Operationen ---");
+        System.out.println("\\n--- Pfad-Operationen ---");
         
         File pathFile = new File("data/documents/report.txt");
         System.out.println("Vollständiger Pfad: " + pathFile.getAbsolutePath());
@@ -90,7 +90,7 @@ public class FileBasics {
         System.out.println("Dateiname: " + pathFile.getName());
 
         // 6. Temporäre Dateien
-        System.out.println("\n--- Temporäre Dateien ---");
+        System.out.println("\\n--- Temporäre Dateien ---");
         
         try {
             File tempFile = File.createTempFile("temp_", ".txt");
@@ -105,7 +105,7 @@ public class FileBasics {
         }
 
         // 7. Aufräumen (Beispiel)
-        System.out.println("\n--- Aufräumen ---");
+        System.out.println("\\n--- Aufräumen ---");
         
         // Verzeichnis löschen (nur wenn leer)
         File tempDir = new File("test_directory");
